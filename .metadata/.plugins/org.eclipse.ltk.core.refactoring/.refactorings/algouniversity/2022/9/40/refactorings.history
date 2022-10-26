@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;arr1&apos; in &apos;Array.sort_the_square_of_nos.main(...)&apos; to &apos;result&apos;&#x0D;&#x0A;- Original project: &apos;algouniversity&apos;&#x0D;&#x0A;- Original element: &apos;Array.sort_the_square_of_nos.main(String[]).arr1&apos;&#x0D;&#x0A;- Renamed element: &apos;arr1&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;arr1&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;Array{sort_the_square_of_nos.java[sort_the_square_of_nos~main~\[QString;@arr1!544!574!549!552!\[I!0!false" name="result" references="true" stamp="1664360507112" version="1.0"/>
+</session>

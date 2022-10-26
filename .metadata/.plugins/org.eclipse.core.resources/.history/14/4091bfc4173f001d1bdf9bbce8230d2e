@@ -1,0 +1,43 @@
+package Array;
+
+//we are give sorted array of positive an negative nos we have print the sorted array of squares of these nos
+// IP-[-3,-1,0,5,7]
+//OP-[0,1,9,25,49]
+//A2 first square all nos then sort TC ONLOGN
+//A1-square of all the positive nos will be in the same order but smallest no square can be potential next big no
+// T.C-ON
+
+public class sort_the_square_of_nos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     int[]arr= {-3,-1,0,5,7};
+     int l=0;
+     int h=arr.length-1;
+     int[]result=new int [arr.length];
+    int k=arr.length-1;
+     while(l<h) {
+    	 if(Math.abs(arr[l])>Math.abs(arr[h])) {
+    		 result[k]=arr[l]*arr[l];
+    		 l++;
+    		 k--;
+    		 
+    	 }
+    	 else if(Math.abs(arr[l])==Math.abs(arr[h])) {
+    		 result[k]=arr[l]*arr[l];
+    		 k--;
+    		 result[k]=arr[l]*arr[l];
+    		 
+    	 }
+    	 else {
+    		 result[k]=arr[h]*arr[h];
+    		 h--;
+    		 k--;
+    	 }
+     }
+     for(int i=0;i<arr.length;i++) {
+    	 System.out.print(result[i]);
+     }
+	}
+
+}

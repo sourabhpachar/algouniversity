@@ -1,0 +1,36 @@
+package Array;
+
+
+// i/p - abzaxf
+// o/p-  aabfxz
+//A1-> convert string to char array then either use Arrays.sort or any sorting algorithm T.C->nlogn
+//A-2-> use counting sort(best for fix no of characters) T.C O(N+26)
+import java.util.*;
+
+public class sorting_string {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Scanner sc=new Scanner(System.in);
+     String s=sc.next();
+     //A1
+//     char[] ss=s.toCharArray();
+//     Arrays.sort(ss);
+//     System.out.println(ss);
+     //A2
+     int max=0;
+     char[] ss=s.toCharArray();
+for(int i=0;i<s.length();i++) {
+	 
+    	 if(ss[i]>max) {
+    		 System.out.println(ss[i]);
+    		max=ss[i]; 
+    	 }
+    	 
+     }
+System.out.println(max);
+     int[]count=new int[s.length()];
+     
+	}
+
+}

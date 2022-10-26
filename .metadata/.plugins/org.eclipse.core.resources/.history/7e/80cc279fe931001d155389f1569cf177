@@ -1,0 +1,37 @@
+package Assignment_01;
+import java.util.*;
+import java.lang.*;
+
+public class P1_the_judging_eye {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Scanner sc=new Scanner(System.in);
+      int x=sc.nextInt();
+      int y=sc.nextInt();
+      int a=sc.nextInt();
+      int b=sc.nextInt();
+      int d=0;
+      
+      if(x<y) {
+    	  if(a<b) {
+    		  d=Math.abs(x-a)+Math.abs(y-b);
+    		  System.out.println(d);
+    	  }
+    	  else {
+    		  d=Math.abs(y-x);
+    	  }
+      }
+      else {
+    	  if(a<b) {
+    		  d=Math.abs(y-x);
+    		  System.out.println(d);
+    	  }
+    	  else {
+    		  d=Math.abs(a-x)+Math.abs(b-y);
+    		  System.out.println(d);
+    	  }
+      }
+	}
+
+}

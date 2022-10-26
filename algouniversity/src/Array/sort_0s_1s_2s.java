@@ -1,0 +1,45 @@
+package Array;
+
+import java.util.Scanner;
+
+public class sort_0s_1s_2s {
+
+public static void main(String[] args) {
+	//A1- we can sort an array and print using sorting algo but T.C->O(NLOGN)
+	//A2- we ccan count no of 0 1 and 2s but in this we have to use extra space T.CC->O(N)
+	//A3-we have to sort inplace without using extra space and O(N) time commplexity below is the answer
+	
+
+	Scanner sc=new Scanner (System.in);
+	int n=sc.nextInt();
+	int[]arr=new int[n];
+	for(int i=0;i<n;i++) {
+		arr[i]=sc.nextInt();
+	}
+	
+	int mid=0,low=0;
+	int high=arr.length-1;
+	while(mid<=high) {
+		if(arr[mid]==0) {
+			int temp=arr[mid];
+			arr[mid]=arr[low];
+			arr[low]=temp;
+			low++;
+		}
+		else if(arr[mid]==1) {
+			mid++;
+		}
+		else if(arr[mid]==2) {
+			int temp=arr[mid];
+			arr[mid]=arr[high];
+			arr[high]=temp; 
+			high--;
+		}
+		
+	}
+	for(int i=0;i<n;i++) {
+		System.out.print(arr[i]);
+	}
+	
+}
+}

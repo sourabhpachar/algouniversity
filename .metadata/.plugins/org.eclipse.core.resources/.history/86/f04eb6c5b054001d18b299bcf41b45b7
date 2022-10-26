@@ -1,0 +1,19 @@
+package searching;
+
+public class find_first_index_of1_in_sorted_binary_array {
+public static void main(String[] args) {
+	int[]arr= {0,0,0,0,0,1,1,1,1,1,1,1,1};
+	int l=0;
+	int r=arr.length-1;
+	while(l+1<r) {
+		int m=l+(r-l)/2;
+		if(arr[m]==0) {
+			l=m;
+		}
+		else {
+			r=m;
+		}
+	}
+	System.out.println(r);
+}
+}

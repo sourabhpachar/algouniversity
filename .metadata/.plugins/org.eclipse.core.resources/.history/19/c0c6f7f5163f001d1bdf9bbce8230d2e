@@ -1,0 +1,10 @@
+package Array;
+
+public class sort_the_square_of_nos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

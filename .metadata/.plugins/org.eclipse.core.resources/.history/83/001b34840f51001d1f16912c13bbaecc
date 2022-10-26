@@ -1,0 +1,45 @@
+package Array;
+
+import java.util.Scanner;
+
+public class p7_sphinix_and_range_sum {
+	public static void rangesum(int[] arr1, int l, int r) {
+		if (l == 0) {
+			System.out.println(arr1[r]);
+		} else {
+			System.out.println(arr1[r] - arr1[l - 1]);
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		long n = sc.nextLong();
+		long a[]=new long[n];
+		Long [] arr = new Long[n+1];
+		long [] arr1 = new long[n+1];
+		int sum = 0;
+		for (int i = 1; i <= n; i++) {
+			arr[i] = sc.nextInt();
+			
+		}
+		for (int i = 1; i <= n; i++) {
+			arr1[i] = arr1[i-1]+arr[i];
+			
+			
+			
+			
+			
+		}
+		int q = sc.nextInt();
+		while (q > 0) {
+			int l = sc.nextInt();
+			int r = sc.nextInt();
+			//rangesum(arr1, l , r );
+			System.out.println(arr1[r] - arr1[l - 1]);
+			q--;
+		}
+
+	}
+
+}
